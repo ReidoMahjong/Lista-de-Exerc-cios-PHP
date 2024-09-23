@@ -1,0 +1,153 @@
+body{
+    zoom: 50%;
+    color: white;  
+    background-image: url(img/index_background.gif);    
+    background-repeat: no-repeat;
+    background-size: cover;  
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color:rgb(255 255 255 / 0.75);
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 450px;
+    font-weight: bold;
+}
+
+.correct {
+    margin-left: 670px;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.5);
+    font-weight: bold;
+    transition: all ease-out 0.25s;
+}
+
+
+ul {
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: auto;
+    margin-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+li {
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    opacity: 100%;
+    margin: 15px;
+    list-style: none;
+    border-radius: 25px;
+    padding: 15px;
+    transition: all ease-out 0.25s;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    transition: all ease-out 0.25s;
+}
+
+#botoes {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+img {
+    height: 100px;
+    opacity: 75%;
+}
+
+#p_b {
+    opacity: 50%;
+}
+
+#box {
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    margin: auto;
+    margin-left: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.write {
+    background-color: rgba(169, 0, 0, 0.25);
+    font-size: 30px;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all ease-out 0.25s;
+
+}
+
+.send {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    border: none;
+    color: rgb(255 255 255 / 0.5);
+    transition: all ease-out 0.25s;
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 25px;
+}
+
+.write:hover {
+    background-color: rgba(169, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    transition: all ease-out 0.25s;
+}
+
+.send:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    transition: all ease-out 0.25s;
+}
+
+.line {
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+    transition: all ease-out 0.25s;
+}
+
+.line:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
+    transition: all ease-out 0.25s;
+}
+
+.input_line {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.input_txt {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.5);
+}

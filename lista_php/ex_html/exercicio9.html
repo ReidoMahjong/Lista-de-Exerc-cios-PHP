@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/mitsudomoe.png">
+</head>
+<body>
+    <h1 class="correct">Exercício 9</h1>
+
+    <div id="box">
+        <form method="post" action="../ex_php/exercicio9.php">
+            <li>
+                <p class="input_txt">Digite seu nome: 
+                <input type="text" class="write" name="nome">
+            </li>
+            <li>
+                <p class="input_txt">Digite sua idade:
+                <input type="text" class="write" name="idade">
+            </li>
+            <input type="submit" value="Enviar" class="send" name="send">
+        </form>
+    </div>
+
+    <div id="botoes">
+        <button onclick="vol_f()" type="button">
+            <img id= "vol_b" src="../img/mute.png">
+        </button>
+        <button onclick="p_f()" type="button">
+            <img id="p_b" src="../img/play.png">
+        </button>
+    </div>
+    <script src="../music.js"></script>
+</body>
+</html>

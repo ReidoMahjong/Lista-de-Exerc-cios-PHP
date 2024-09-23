@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/mitsudomoe.png">
+</head>
+<body>
+    <h1 class="correct">Exercício</h1>
+
+    <div id="box">
+        <li id="choose" class="line">Por favor, escolha uma opção:</li>
+
+        <button id="b_ca" style="display: show; padding-left: 67px; padding-right: 67px;" class="send" onclick="cadastro()" type="button">Cadastro de Aluno</button>
+        <br>
+        <button id="b_ch" style="display: show;" class="send" onclick="carga()" type="button">Aumentar Carga Horária</button>
+
+        <form id="cadastro" style="display: none;" method="post" action="../ex_php/ex10_cadastro.php">
+            <div id="c1" style="display: hide;">
+                <li>
+                    <p class="input_txt">Nome:
+                    <input type="text" class="write" name="nome" id="nome">
+                </li>
+                <li>
+                    <p class="input_txt">Matricula:
+                    <input type="text" class="write" name="matricula" id="matricula">
+                </li>
+                <li>
+                    <p class="input_txt">Curso:
+                    <input type="text" class="write" name="curso" id="curso">
+                </li>
+                <li>
+                    <p class="input_txt">Email:
+                    <input type="text" class="write" name="email" id="email">
+                </li>
+                <li>
+                    <p class="input_txt">Telefone:
+                    <input type="text" class="write" name="telefone" id="telefone">
+                </li>
+            </div>
+            <button id="b_c2" style="display: show;" class="send" onclick="ca2()" type="button">Próximo</button>
+            <div id="c2" style="display: none;">
+                <li>
+                    <p class="input_txt">Endereço:
+                    <input type="text" class="write" name="endereco" id="endereco">
+                </li>
+                <li>
+                    <p class="input_txt">CEP:
+                    <input type="text" class="write" name="cep" id="endereco">
+                </li>
+                <li>
+                    <p class="input_txt">Cidade:
+                    <input type="text" class="write" name="cidade" id="cidade">
+                </li>
+                <li>
+                    <p class="input_txt">UF:
+                    <input type="text" class="write" name="uf" id="uf">
+                </li>
+                <li>
+                    <p class="input_txt">Curso para Horas Complementares:
+                    <input type="text" class="write" name="hc" id="hc">
+                </li>
+                <li>
+                    <p class="input_txt">Carga Horária:
+                    <input type="text" class="write" name="ch" id="ch">
+                </li>
+                <input type="submit" value="Enviar" class="send" name="send"> 
+            </div>
+        </form>
+
+        <form id="horas" style="display: none;" method="post" action="../ex_php/ex11_somar_cargas.php">
+            <li>
+                <p class="input_txt">Informe a matricula:
+                <input type="text" class="write" name="matricula" id="matricula"> 
+            </li>
+            <li>
+                <p class="input_txt">Carga horária para adicionar:
+                <input type="text" class="write" name="carga" id="carga"> 
+            </li>
+            <input type="submit" value="Enviar" class="send" name="send"> 
+        </form>
+    </div>
+
+    <div id="botoes">
+        <button onclick="vol_f()" type="button">
+            <img id= "vol_b" src="../img/mute.png">
+        </button>
+        <button onclick="p_f()" type="button">
+            <img id="p_b" src="../img/play.png">
+        </button>
+    </div>
+
+    <audio id="lofi_back" loop muted>
+        <source src="../music/lofi_backround_music.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function cadastro() {
+            document.getElementById('choose').style.display='none'
+            document.getElementById('b_ch').style.display='none';
+            document.getElementById('b_ca').style.display='none';
+            document.getElementById('cadastro').style.display='';
+            document.getElementById('c1').style.display=''
+        }
+
+        function carga() {
+            document.getElementById('choose').style.display='none'
+            document.getElementById('b_ch').style.display='none';
+            document.getElementById('b_ca').style.display='none';
+            document.getElementById('horas').style.display='';
+        }
+
+        function ca2() {
+            document.getElementById('c1').style.display='none';
+            document.getElementById('b_c2').style.display='none';
+            document.getElementById('c2').style.display=''
+        }
+    </script>
+    <script src="../music.js"></script>
+</body>
+</html>

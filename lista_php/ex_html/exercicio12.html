@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../img/mitsudomoe.png">
+</head>
+<body>
+    <h1 class="correct">Exercício 12</h1>
+
+    <div id="box">
+        <li id="choice" class="line">Escolha o método da busca</li>
+        <button style="padding-left: 150px; padding-right: 150px;" id="bn" onclick="bn()" class="send">Nome</button>
+        <br>
+        <button style="padding-left: 128px; padding-right: 128px;" id="bm" onclick="bm()" class="send">Matricula</button>
+        <br>
+        <button style="padding-left: 150px; padding-right: 150px;" id="be" onclick="be()" class="send">E-mail</button>
+
+        <form id="fn" style="display: none;" method="post" action="../ex_php/exercicio12.php">
+            <li>
+                <p class="input_txt">Digite o nome para a busca:
+                <input type="text" class="write" name="nome" id="nome"> 
+            </li>
+            <input type="submit" value="Enviar" class="send" name="send"> 
+        </form>
+        <form id="fm" style="display: none;" method="post" action="../ex_php/exercicio12.php">
+            <li>
+                <p class="input_txt">Digite a matriculap para a busca:
+                <input type="text" class="write" name="matricula" id="matricula"> 
+            </li>
+            <input type="submit" value="Enviar" class="send" name="send"> 
+        </form>
+        <form id="fe" style="display: none;" method="post" action="../ex_php/exercicio12.php">
+            <li>
+                <p class="input_txt">Digite o email para a busca:
+                <input type="text" class="write" name="email" id="email"> 
+            </li>
+            <input type="submit" value="Enviar" class="send" name="send"> 
+        </form>
+    </div>
+
+    <div id="botoes">
+        <button onclick="vol_f()" type="button">
+            <img id= "vol_b" src="../img/mute.png">
+        </button>
+        <button onclick="p_f()" type="button">
+            <img id="p_b" src="../img/play.png">
+        </button>
+    </div>
+
+    <audio id="lofi_back" loop muted>
+        <source src="../music/lofi_backround_music.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        function bn() {
+            document.getElementById('choice').style.display='none';
+            document.getElementById('bn').style.display='none';
+            document.getElementById('bm').style.display='none';
+            document.getElementById('be').style.display='none';
+            document.getElementById('fn').style.display='';
+        }
+        function bm() {
+            document.getElementById('choice').style.display='none';
+            document.getElementById('bn').style.display='none';
+            document.getElementById('bm').style.display='none';
+            document.getElementById('be').style.display='none';
+            document.getElementById('fm').style.display='';
+        }
+        function be() {
+            document.getElementById('choice').style.display='none';
+            document.getElementById('bn').style.display='none';
+            document.getElementById('bm').style.display='none';
+            document.getElementById('be').style.display='none';
+            document.getElementById('fe').style.display='';
+        }
+    </script>
+    <script src="../music.js"></script>
+</body>
+</html>
