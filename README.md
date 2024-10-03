@@ -1,6 +1,6 @@
 # Lista-de-Exerc-cios-PHP
 
-Necessário XAMPP com apache a mysqli!
+Necessário XAMPP com apache e mysqli!
 
 pasta lista_php deve ir em xampp>htdocs
 
