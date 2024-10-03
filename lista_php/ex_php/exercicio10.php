@@ -15,6 +15,7 @@
             <?php
 
                 $num = $_POST['num'];
+                $num = (int)$num;
                 $meses = array('Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro');
                 $mes = '';
                 if (13 > $num and $num > 0) {
